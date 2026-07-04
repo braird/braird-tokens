@@ -37,10 +37,10 @@
   --space-section-gap: 8px;
   --space-chip-x: 10px;
   --space-chip-y: 5px;
-  --font-base: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
-  --font-serif: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  --font-base: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
   --font-display: 'Lora', Georgia, serif;
-  --font-front-door: 'Sometype Mono', ui-monospace, SFMono-Regular, monospace;
+  --font-front-door: 'Lora', Georgia, serif;
   --font-stat: 'Lora', Georgia, serif;
   --text-display-size: 26px;
   --text-display-height: 1.2;

@@ -137,10 +137,10 @@ enum BrairdTokens {
   }
 
   enum Font {
-    static let fontBase = "'IBM Plex Sans', system-ui, -apple-system, sans-serif"
-    static let fontSerif = "'EB Garamond', Georgia, 'Times New Roman', serif"
+    static let fontBase = "'Hanken Grotesk', system-ui, -apple-system, sans-serif"
+    static let fontSerif = "'Lora', Georgia, serif"
     static let fontDisplay = "'Lora', Georgia, serif"
-    static let fontFrontDoor = "'Sometype Mono', ui-monospace, SFMono-Regular, monospace"
+    static let fontFrontDoor = "'Lora', Georgia, serif"
     static let fontStat = "'Lora', Georgia, serif"
   }
 }

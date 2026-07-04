@@ -6,6 +6,21 @@ entry under `[Unreleased]` (CI-enforced, dependabot-exempt).
 
 ## [Unreleased]
 
+### Changed
+
+- **Canonicalise on the Braird two-face type system (SUR-642).** The brand is now exactly
+  **Hanken Grotesk** (all UI/body) + **Lora** (all serif/editorial), matching the Braird app
+  design (`braird/screens/app.css`). Token changes: `--font-base` `IBM Plex Sans → Hanken
+  Grotesk`; `--font-serif` `EB Garamond → Lora`; `--font-front-door` `Sometype Mono → Lora`.
+  `--font-display` / `--font-stat` stay Lora. **The Sometype Mono front-door face (SUR-508)
+  is retired** — the `--font-front-door` token is kept (now Lora) so consumers referencing it
+  don't break, but its distinct mono identity is gone. Spine change (front-door contract) —
+  **founder sign-off**. Consumers must bundle Hanken Grotesk + Lora and drop IBM Plex Sans /
+  EB Garamond / Sometype Mono when they re-pin. Shadows were already forest-tinted (canonical),
+  so only the font intent changes.
+
+## [0.1.0] - 2026-07-04
+
 ### Added
 
 - **Stand up `braird-tokens` — the platform-neutral design-token source (SUR-642).** One
