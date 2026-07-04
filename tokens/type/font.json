@@ -1,0 +1,10 @@
+{
+  "font": {
+    "$description": "Font-family + stat-face INTENT only — the neutral source carries the family stack; each consumer bundles its own binaries (woff2 in the web repos, ttf/otf in native). --font-front-door (Sometype Mono, SUR-508) must stay in lockstep across every emit.",
+    "base":       { "$value": "'IBM Plex Sans', system-ui, -apple-system, sans-serif", "$type": "fontFamily", "$description": "app interior UI + body" },
+    "serif":      { "$value": "'EB Garamond', Georgia, 'Times New Roman', serif",       "$type": "fontFamily", "$description": "reading content — quotes, note body" },
+    "display":    { "$value": "'Lora', Georgia, serif",                                  "$type": "fontFamily", "$description": "screen titles (editorial)" },
+    "front-door": { "$value": "'Sometype Mono', ui-monospace, SFMono-Regular, monospace","$type": "fontFamily", "$description": "front-door surfaces only (landing/auth/waitlist) — SUR-508" },
+    "stat":       { "$value": "'Lora', Georgia, serif",                                  "$type": "fontFamily", "$description": "stat-box number face — from the Braird Screens design (.stat .v uses the Lora display serif, not EB Garamond). Paired with --text-stat-* (28px / 600 / line-height 1)." }
+  }
+}

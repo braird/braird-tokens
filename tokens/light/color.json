@@ -1,0 +1,39 @@
+{
+  "light": {
+    "$description": "Light theme — surfaces, text, border, accent, custom, and idea-tree inks. Emitted to :root. Values are the Braird · Resurface palette (colors.braird.css / surfc tokens.css, names unchanged, SUR-679). Accent/custom/inks live here (not brand/) because the Braird Screens design lifts them for dark mode — see tokens/dark/color.json.",
+    "color": {
+      "bg": {
+        "primary":   { "$value": "{primitive.paper.cool}",  "$type": "color" },
+        "input":     { "$value": "{primitive.paper.input}", "$type": "color" },
+        "card":      { "$value": "{primitive.paper.card}",  "$type": "color" },
+        "subtle":    { "$value": "{primitive.paper.subtle}","$type": "color" },
+        "overlay":   { "$value": "rgba(21, 27, 21, 0.40)",  "$type": "color", "$description": "lightbox/modal scrim" },
+        "marketing": { "$value": "{primitive.paper.cool}",  "$type": "color" }
+      },
+      "text": {
+        "primary":   { "$value": "{primitive.ink.forest}", "$type": "color" },
+        "secondary": { "$value": "{primitive.ink.slate}",  "$type": "color" },
+        "muted":     { "$value": "{primitive.ink.mist}",   "$type": "color" }
+      },
+      "border":        { "$value": "{primitive.line.hair}",   "$type": "color" },
+      "border-strong": { "$value": "{primitive.line.strong}", "$type": "color" },
+      "accent":       { "$value": "{primitive.green.shoot}",  "$type": "color", "$description": "large-UI accent — buttons, active states, nav, wordmark" },
+      "accent-light": { "$value": "{primitive.green.chip}",   "$type": "color" },
+      "accent-dark":  { "$value": "{primitive.green.forest}", "$type": "color", "$description": "hover/pressed" },
+      "accent-text":  { "$value": "{primitive.green.text}",   "$type": "color", "$description": "AA-safe green for text on light tints" },
+      "custom":      { "$value": "#B0552F", "$type": "color", "$description": "the reader's own ideas — clay" },
+      "custom-text": { "$value": "#8C4321", "$type": "color" },
+      "custom-bg":   { "$value": "#F1E6DC", "$type": "color" }
+    },
+    "ink": {
+      "mind":                 { "$value": "#2B5B8A", "$type": "color", "$description": "blue — Mind" },
+      "self":                 { "$value": "#5A4A7A", "$type": "color", "$description": "plum — Self" },
+      "knowledge-systems":    { "$value": "#6E6420", "$type": "color", "$description": "olive gold — Knowledge & Systems" },
+      "action-work":          { "$value": "#2F7D5C", "$type": "color", "$description": "green — Action & Work" },
+      "power-society":        { "$value": "#A8392F", "$type": "color", "$description": "red — Power & Society" },
+      "relationships-ethics": { "$value": "#6B3A7A", "$type": "color", "$description": "violet — Relationships & Ethics" },
+      "time-change":          { "$value": "#3F6470", "$type": "color", "$description": "slate — Time & Change" },
+      "world-meaning":        { "$value": "#7A4A2E", "$type": "color", "$description": "rust — World & Meaning" }
+    }
+  }
+}

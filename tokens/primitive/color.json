@@ -1,0 +1,29 @@
+{
+  "primitive": {
+    "$description": "Primitive colour ramp — raw Braird brand hues. Reference-only: primitives are NOT emitted as tokens; semantic tokens reference them. Lifted from surfc/src/design/tokens.css (SUR-679 Braird · Resurface palette). Dark-ground hues (forest-deep, warm, warm-muted) are the known Braird dark values from surfc/src/lib/stripeTransition.js (SUR-419).",
+    "paper": {
+      "cool":   { "$value": "#EFEEE7", "$type": "color", "$description": "cool paper — app ground" },
+      "card":   { "$value": "#FFFFFF", "$type": "color", "$description": "elevated surfaces" },
+      "input":  { "$value": "#F5F4ED", "$type": "color", "$description": "input background" },
+      "subtle": { "$value": "#E3E4DA", "$type": "color", "$description": "inactive chips, shimmer" },
+      "warm":       { "$value": "#F0ECE8", "$type": "color", "$description": "dark-mode primary text (warm paper)" },
+      "warm-muted": { "$value": "#B5ADA6", "$type": "color", "$description": "dark-mode muted text" }
+    },
+    "ink": {
+      "forest":      { "$value": "#1B241F", "$type": "color", "$description": "forest ink — body copy/headings" },
+      "forest-deep": { "$value": "#15281C", "$type": "color", "$description": "deepest forest — dark-mode ground" },
+      "slate":       { "$value": "#586056", "$type": "color", "$description": "secondary text" },
+      "mist":        { "$value": "#7B847A", "$type": "color", "$description": "muted text" }
+    },
+    "green": {
+      "shoot":  { "$value": "#2F9E63", "$type": "color", "$description": "shoot green — large-UI accent" },
+      "chip":   { "$value": "#DEEEDD", "$type": "color", "$description": "chip fills, active chip bg" },
+      "forest": { "$value": "#154029", "$type": "color", "$description": "hover/pressed — deep forest" },
+      "text":   { "$value": "#1E6B40", "$type": "color", "$description": "AA-safe green for text on tints" }
+    },
+    "line": {
+      "hair":   { "$value": "#DBDCD1", "$type": "color", "$description": "card borders, dividers" },
+      "strong": { "$value": "#B6BAAB", "$type": "color", "$description": "input borders, viewfinder" }
+    }
+  }
+}

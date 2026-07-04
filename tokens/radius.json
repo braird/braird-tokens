@@ -1,0 +1,11 @@
+{
+  "radius": {
+    "$description": "Border radii. Names match surfc/src/design/tokens.css. dot/badge/chip use 999px/50% pill values.",
+    "card":  { "$value": "14px",  "$type": "dimension" },
+    "input": { "$value": "10px",  "$type": "dimension" },
+    "chip":  { "$value": "999px", "$type": "dimension", "$description": "full pill" },
+    "image": { "$value": "12px",  "$type": "dimension" },
+    "badge": { "$value": "999px", "$type": "dimension" },
+    "dot":   { "$value": "50%",   "$type": "dimension", "$description": "idea colour dots" }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "space": {
+    "$description": "8px base grid + component spacing shortcuts. Names match surfc/src/design/tokens.css.",
+    "1": { "$value": "8px",  "$type": "dimension" },
+    "2": { "$value": "16px", "$type": "dimension" },
+    "3": { "$value": "24px", "$type": "dimension" },
+    "4": { "$value": "32px", "$type": "dimension" },
+    "5": { "$value": "40px", "$type": "dimension" },
+    "6": { "$value": "48px", "$type": "dimension" },
+    "card-padding":  { "$value": "14px", "$type": "dimension" },
+    "screen-margin": { "$value": "16px", "$type": "dimension" },
+    "section-gap":   { "$value": "8px",  "$type": "dimension" },
+    "chip-x":        { "$value": "10px", "$type": "dimension" },
+    "chip-y":        { "$value": "5px",  "$type": "dimension" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "color": {
+    "$description": "Mode-invariant colour — semantic status + scope palettes. The Braird Screens dark theme does not re-tune these, so they render identically in light and dark (revisit if a future design pass lifts scope/status for dark). Accent, custom, and idea-tree inks are NOT here — the design lifts them, so they live in tokens/light + tokens/dark. Names match surfc/src/design/tokens.css.",
+    "destructive":    { "$value": "#B23B2E", "$type": "color" },
+    "destructive-bg": { "$value": "#F4E6E3", "$type": "color" },
+    "warning":        { "$value": "#8A6A1F", "$type": "color", "$description": "quota notices — olive gold" },
+    "warning-bg":     { "$value": "#F3EAD5", "$type": "color" },
+    "warning-text":   { "$value": "#6E5316", "$type": "color" },
+
+    "scope-source":      { "$value": "#A24E76", "$type": "color", "$description": "mulberry — Source" },
+    "scope-source-text": { "$value": "#7E3A5A", "$type": "color" },
+    "scope-source-bg":   { "$value": "#F2E4EB", "$type": "color" },
+    "lens":              { "$value": "#6E6420", "$type": "color", "$description": "olive gold (AA-safe) — Lens" },
+    "lens-text":         { "$value": "#524A14", "$type": "color" },
+    "lens-bg":           { "$value": "#F1ECD5", "$type": "color" },
+    "collection":        { "$value": "#2B5B8A", "$type": "color", "$description": "blue — Collection" },
+    "collection-text":   { "$value": "#1F4670", "$type": "color" },
+    "collection-bg":     { "$value": "#E5ECF4", "$type": "color" }
+  }
+}

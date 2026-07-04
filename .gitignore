@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+
+# NOTE: build/ is intentionally NOT ignored. The generated CSS/Compose/Swift
+# artifacts are committed and drift-guarded (see .github/workflows/drift.yml) —
+# consumers pin this repo by tag+SHA and read the committed output directly.

@@ -1,0 +1,39 @@
+name: Token drift check
+
+# The whole point of braird-tokens: the committed build/ artifacts MUST equal a fresh
+# regeneration from tokens/**. This job regenerates and fails on any divergence — the
+# silent-copy problem SUR-642 exists to kill. Mirrors braird-core's bindings-drift pattern
+# (regenerate through the same script CI uses, diff, fail on drift).
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Regenerate + self-check
+        run: npm run check
+
+      - name: Assert committed build/ has not drifted from tokens/**
+        run: |
+          if [ -n "$(git status --porcelain build/)" ]; then
+            echo "::error::build/ is stale — regenerate with \`npm run build\` and commit the result."
+            git --no-pager diff -- build/
+            git status --porcelain build/
+            exit 1
+          fi
+          echo "build/ is in sync with tokens/**."
