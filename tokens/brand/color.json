@@ -1,16 +1,8 @@
 {
   "color": {
-    "$description": "Mode-invariant brand colour — accent, semantic status, scope, and idea-tree branch inks. These are brand identity hues that stay constant across light/dark (tune per-mode later if the design calls for it). Emitted once to :root. Names match surfc/src/design/tokens.css.",
-    "accent":       { "$value": "{primitive.green.shoot}",  "$type": "color", "$description": "large-UI accent — buttons, active states, nav, wordmark" },
-    "accent-light": { "$value": "{primitive.green.chip}",   "$type": "color" },
-    "accent-dark":  { "$value": "{primitive.green.forest}", "$type": "color", "$description": "hover/pressed" },
-    "accent-text":  { "$value": "{primitive.green.text}",   "$type": "color", "$description": "AA-safe green for text on light tints" },
-
+    "$description": "Mode-invariant colour — semantic status + scope palettes. The Braird Screens dark theme does not re-tune these, so they render identically in light and dark (revisit if a future design pass lifts scope/status for dark). Accent, custom, and idea-tree inks are NOT here — the design lifts them, so they live in tokens/light + tokens/dark. Names match surfc/src/design/tokens.css.",
     "destructive":    { "$value": "#B23B2E", "$type": "color" },
     "destructive-bg": { "$value": "#F4E6E3", "$type": "color" },
-    "custom":         { "$value": "#B0552F", "$type": "color", "$description": "custom ideas — clay" },
-    "custom-text":    { "$value": "#8C4321", "$type": "color" },
-    "custom-bg":      { "$value": "#F1E6DC", "$type": "color" },
     "warning":        { "$value": "#8A6A1F", "$type": "color", "$description": "quota notices — olive gold" },
     "warning-bg":     { "$value": "#F3EAD5", "$type": "color" },
     "warning-text":   { "$value": "#6E5316", "$type": "color" },
@@ -24,15 +16,5 @@
     "collection":        { "$value": "#2B5B8A", "$type": "color", "$description": "blue — Collection" },
     "collection-text":   { "$value": "#1F4670", "$type": "color" },
     "collection-bg":     { "$value": "#E5ECF4", "$type": "color" }
-  },
-  "ink": {
-    "mind":                 { "$value": "#2B5B8A", "$type": "color", "$description": "blue — Mind" },
-    "self":                 { "$value": "#5A4A7A", "$type": "color", "$description": "plum — Self" },
-    "knowledge-systems":    { "$value": "#6E6420", "$type": "color", "$description": "olive gold — Knowledge & Systems" },
-    "action-work":          { "$value": "#2F7D5C", "$type": "color", "$description": "green — Action & Work" },
-    "power-society":        { "$value": "#A8392F", "$type": "color", "$description": "red — Power & Society" },
-    "relationships-ethics": { "$value": "#6B3A7A", "$type": "color", "$description": "violet — Relationships & Ethics" },
-    "time-change":          { "$value": "#3F6470", "$type": "color", "$description": "slate — Time & Change" },
-    "world-meaning":        { "$value": "#7A4A2E", "$type": "color", "$description": "rust — World & Meaning" }
   }
 }

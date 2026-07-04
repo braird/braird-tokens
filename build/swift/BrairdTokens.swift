@@ -4,15 +4,8 @@ import SwiftUI
 /// Braird design tokens. The theme layer selects Light/Dark by colorScheme/override.
 enum BrairdTokens {
   enum ColorLight {
-    static let colorAccent = Color(.sRGB, red: 0.184, green: 0.620, blue: 0.388, opacity: 1)
-    static let colorAccentLight = Color(.sRGB, red: 0.871, green: 0.933, blue: 0.867, opacity: 1)
-    static let colorAccentDark = Color(.sRGB, red: 0.082, green: 0.251, blue: 0.161, opacity: 1)
-    static let colorAccentText = Color(.sRGB, red: 0.118, green: 0.420, blue: 0.251, opacity: 1)
     static let colorDestructive = Color(.sRGB, red: 0.698, green: 0.231, blue: 0.180, opacity: 1)
     static let colorDestructiveBg = Color(.sRGB, red: 0.957, green: 0.902, blue: 0.890, opacity: 1)
-    static let colorCustom = Color(.sRGB, red: 0.690, green: 0.333, blue: 0.184, opacity: 1)
-    static let colorCustomText = Color(.sRGB, red: 0.549, green: 0.263, blue: 0.129, opacity: 1)
-    static let colorCustomBg = Color(.sRGB, red: 0.945, green: 0.902, blue: 0.863, opacity: 1)
     static let colorWarning = Color(.sRGB, red: 0.541, green: 0.416, blue: 0.122, opacity: 1)
     static let colorWarningBg = Color(.sRGB, red: 0.953, green: 0.918, blue: 0.835, opacity: 1)
     static let colorWarningText = Color(.sRGB, red: 0.431, green: 0.325, blue: 0.086, opacity: 1)
@@ -25,14 +18,6 @@ enum BrairdTokens {
     static let colorCollection = Color(.sRGB, red: 0.169, green: 0.357, blue: 0.541, opacity: 1)
     static let colorCollectionText = Color(.sRGB, red: 0.122, green: 0.275, blue: 0.439, opacity: 1)
     static let colorCollectionBg = Color(.sRGB, red: 0.898, green: 0.925, blue: 0.957, opacity: 1)
-    static let inkMind = Color(.sRGB, red: 0.169, green: 0.357, blue: 0.541, opacity: 1)
-    static let inkSelf = Color(.sRGB, red: 0.353, green: 0.290, blue: 0.478, opacity: 1)
-    static let inkKnowledgeSystems = Color(.sRGB, red: 0.431, green: 0.392, blue: 0.125, opacity: 1)
-    static let inkActionWork = Color(.sRGB, red: 0.184, green: 0.490, blue: 0.361, opacity: 1)
-    static let inkPowerSociety = Color(.sRGB, red: 0.659, green: 0.224, blue: 0.184, opacity: 1)
-    static let inkRelationshipsEthics = Color(.sRGB, red: 0.420, green: 0.227, blue: 0.478, opacity: 1)
-    static let inkTimeChange = Color(.sRGB, red: 0.247, green: 0.392, blue: 0.439, opacity: 1)
-    static let inkWorldMeaning = Color(.sRGB, red: 0.478, green: 0.290, blue: 0.180, opacity: 1)
     static let colorBgPrimary = Color(.sRGB, red: 0.937, green: 0.933, blue: 0.906, opacity: 1)
     static let colorBgInput = Color(.sRGB, red: 0.961, green: 0.957, blue: 0.929, opacity: 1)
     static let colorBgCard = Color(.sRGB, red: 1.000, green: 1.000, blue: 1.000, opacity: 1)
@@ -44,18 +29,26 @@ enum BrairdTokens {
     static let colorTextMuted = Color(.sRGB, red: 0.482, green: 0.518, blue: 0.478, opacity: 1)
     static let colorBorder = Color(.sRGB, red: 0.859, green: 0.863, blue: 0.820, opacity: 1)
     static let colorBorderStrong = Color(.sRGB, red: 0.714, green: 0.729, blue: 0.671, opacity: 1)
-  }
-
-  enum ColorDark {
     static let colorAccent = Color(.sRGB, red: 0.184, green: 0.620, blue: 0.388, opacity: 1)
     static let colorAccentLight = Color(.sRGB, red: 0.871, green: 0.933, blue: 0.867, opacity: 1)
     static let colorAccentDark = Color(.sRGB, red: 0.082, green: 0.251, blue: 0.161, opacity: 1)
     static let colorAccentText = Color(.sRGB, red: 0.118, green: 0.420, blue: 0.251, opacity: 1)
-    static let colorDestructive = Color(.sRGB, red: 0.698, green: 0.231, blue: 0.180, opacity: 1)
-    static let colorDestructiveBg = Color(.sRGB, red: 0.957, green: 0.902, blue: 0.890, opacity: 1)
     static let colorCustom = Color(.sRGB, red: 0.690, green: 0.333, blue: 0.184, opacity: 1)
     static let colorCustomText = Color(.sRGB, red: 0.549, green: 0.263, blue: 0.129, opacity: 1)
     static let colorCustomBg = Color(.sRGB, red: 0.945, green: 0.902, blue: 0.863, opacity: 1)
+    static let inkMind = Color(.sRGB, red: 0.169, green: 0.357, blue: 0.541, opacity: 1)
+    static let inkSelf = Color(.sRGB, red: 0.353, green: 0.290, blue: 0.478, opacity: 1)
+    static let inkKnowledgeSystems = Color(.sRGB, red: 0.431, green: 0.392, blue: 0.125, opacity: 1)
+    static let inkActionWork = Color(.sRGB, red: 0.184, green: 0.490, blue: 0.361, opacity: 1)
+    static let inkPowerSociety = Color(.sRGB, red: 0.659, green: 0.224, blue: 0.184, opacity: 1)
+    static let inkRelationshipsEthics = Color(.sRGB, red: 0.420, green: 0.227, blue: 0.478, opacity: 1)
+    static let inkTimeChange = Color(.sRGB, red: 0.247, green: 0.392, blue: 0.439, opacity: 1)
+    static let inkWorldMeaning = Color(.sRGB, red: 0.478, green: 0.290, blue: 0.180, opacity: 1)
+  }
+
+  enum ColorDark {
+    static let colorDestructive = Color(.sRGB, red: 0.698, green: 0.231, blue: 0.180, opacity: 1)
+    static let colorDestructiveBg = Color(.sRGB, red: 0.957, green: 0.902, blue: 0.890, opacity: 1)
     static let colorWarning = Color(.sRGB, red: 0.541, green: 0.416, blue: 0.122, opacity: 1)
     static let colorWarningBg = Color(.sRGB, red: 0.953, green: 0.918, blue: 0.835, opacity: 1)
     static let colorWarningText = Color(.sRGB, red: 0.431, green: 0.325, blue: 0.086, opacity: 1)
@@ -68,25 +61,32 @@ enum BrairdTokens {
     static let colorCollection = Color(.sRGB, red: 0.169, green: 0.357, blue: 0.541, opacity: 1)
     static let colorCollectionText = Color(.sRGB, red: 0.122, green: 0.275, blue: 0.439, opacity: 1)
     static let colorCollectionBg = Color(.sRGB, red: 0.898, green: 0.925, blue: 0.957, opacity: 1)
-    static let inkMind = Color(.sRGB, red: 0.169, green: 0.357, blue: 0.541, opacity: 1)
-    static let inkSelf = Color(.sRGB, red: 0.353, green: 0.290, blue: 0.478, opacity: 1)
-    static let inkKnowledgeSystems = Color(.sRGB, red: 0.431, green: 0.392, blue: 0.125, opacity: 1)
-    static let inkActionWork = Color(.sRGB, red: 0.184, green: 0.490, blue: 0.361, opacity: 1)
-    static let inkPowerSociety = Color(.sRGB, red: 0.659, green: 0.224, blue: 0.184, opacity: 1)
-    static let inkRelationshipsEthics = Color(.sRGB, red: 0.420, green: 0.227, blue: 0.478, opacity: 1)
-    static let inkTimeChange = Color(.sRGB, red: 0.247, green: 0.392, blue: 0.439, opacity: 1)
-    static let inkWorldMeaning = Color(.sRGB, red: 0.478, green: 0.290, blue: 0.180, opacity: 1)
-    static let colorBgPrimary = Color(.sRGB, red: 0.082, green: 0.157, blue: 0.110, opacity: 1)
-    static let colorBgInput = Color(.sRGB, red: 0.106, green: 0.141, blue: 0.122, opacity: 1)
-    static let colorBgCard = Color(.sRGB, red: 0.106, green: 0.141, blue: 0.122, opacity: 1)
-    static let colorBgSubtle = Color(.sRGB, red: 0.106, green: 0.141, blue: 0.122, opacity: 1)
-    static let colorBgOverlay = Color(.sRGB, red: 0.020, green: 0.039, blue: 0.024, opacity: 0.55)
-    static let colorBgMarketing = Color(.sRGB, red: 0.082, green: 0.157, blue: 0.110, opacity: 1)
-    static let colorTextPrimary = Color(.sRGB, red: 0.941, green: 0.925, blue: 0.910, opacity: 1)
-    static let colorTextSecondary = Color(.sRGB, red: 0.710, green: 0.678, blue: 0.651, opacity: 1)
-    static let colorTextMuted = Color(.sRGB, red: 0.710, green: 0.678, blue: 0.651, opacity: 1)
-    static let colorBorder = Color(.sRGB, red: 0.345, green: 0.376, blue: 0.337, opacity: 1)
-    static let colorBorderStrong = Color(.sRGB, red: 0.710, green: 0.678, blue: 0.651, opacity: 1)
+    static let colorBgPrimary = Color(.sRGB, red: 0.047, green: 0.102, blue: 0.078, opacity: 1)
+    static let colorBgInput = Color(.sRGB, red: 0.063, green: 0.125, blue: 0.098, opacity: 1)
+    static let colorBgCard = Color(.sRGB, red: 0.082, green: 0.161, blue: 0.122, opacity: 1)
+    static let colorBgSubtle = Color(.sRGB, red: 0.945, green: 0.961, blue: 0.922, opacity: 0.1)
+    static let colorBgOverlay = Color(.sRGB, red: 0.031, green: 0.055, blue: 0.039, opacity: 0.62)
+    static let colorBgMarketing = Color(.sRGB, red: 0.047, green: 0.102, blue: 0.078, opacity: 1)
+    static let colorTextPrimary = Color(.sRGB, red: 0.945, green: 0.961, blue: 0.922, opacity: 1)
+    static let colorTextSecondary = Color(.sRGB, red: 0.718, green: 0.765, blue: 0.706, opacity: 1)
+    static let colorTextMuted = Color(.sRGB, red: 0.545, green: 0.588, blue: 0.549, opacity: 1)
+    static let colorBorder = Color(.sRGB, red: 0.945, green: 0.961, blue: 0.922, opacity: 0.12)
+    static let colorBorderStrong = Color(.sRGB, red: 0.945, green: 0.961, blue: 0.922, opacity: 0.22)
+    static let colorAccent = Color(.sRGB, red: 0.310, green: 0.722, blue: 0.478, opacity: 1)
+    static let colorAccentLight = Color(.sRGB, red: 0.435, green: 0.753, blue: 0.537, opacity: 0.15)
+    static let colorAccentDark = Color(.sRGB, red: 0.541, green: 0.839, blue: 0.620, opacity: 1)
+    static let colorAccentText = Color(.sRGB, red: 0.573, green: 0.839, blue: 0.651, opacity: 1)
+    static let colorCustom = Color(.sRGB, red: 0.824, green: 0.463, blue: 0.290, opacity: 1)
+    static let colorCustomText = Color(.sRGB, red: 0.902, green: 0.655, blue: 0.498, opacity: 1)
+    static let colorCustomBg = Color(.sRGB, red: 0.824, green: 0.463, blue: 0.290, opacity: 0.17)
+    static let inkMind = Color(.sRGB, red: 0.420, green: 0.659, blue: 0.851, opacity: 1)
+    static let inkSelf = Color(.sRGB, red: 0.682, green: 0.612, blue: 0.839, opacity: 1)
+    static let inkKnowledgeSystems = Color(.sRGB, red: 0.804, green: 0.733, blue: 0.376, opacity: 1)
+    static let inkActionWork = Color(.sRGB, red: 0.435, green: 0.753, blue: 0.537, opacity: 1)
+    static let inkPowerSociety = Color(.sRGB, red: 0.894, green: 0.486, blue: 0.439, opacity: 1)
+    static let inkRelationshipsEthics = Color(.sRGB, red: 0.698, green: 0.584, blue: 0.831, opacity: 1)
+    static let inkTimeChange = Color(.sRGB, red: 0.518, green: 0.675, blue: 0.737, opacity: 1)
+    static let inkWorldMeaning = Color(.sRGB, red: 0.796, green: 0.627, blue: 0.490, opacity: 1)
   }
 
   enum Space {
@@ -132,8 +132,8 @@ enum BrairdTokens {
     static let textLabelHeight: CGFloat = 1.4
     static let textLabelWeight: Int = 500
     static let textStatSize: CGFloat = 28
-    static let textStatHeight: CGFloat = 1.1
-    static let textStatWeight: Int = 700
+    static let textStatHeight: CGFloat = 1
+    static let textStatWeight: Int = 600
   }
 
   enum Font {
@@ -141,6 +141,6 @@ enum BrairdTokens {
     static let fontSerif = "'EB Garamond', Georgia, 'Times New Roman', serif"
     static let fontDisplay = "'Lora', Georgia, serif"
     static let fontFrontDoor = "'Sometype Mono', ui-monospace, SFMono-Regular, monospace"
-    static let fontStat = "'EB Garamond', Georgia, 'Times New Roman', serif"
+    static let fontStat = "'Lora', Georgia, serif"
   }
 }

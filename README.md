@@ -41,12 +41,14 @@ then imports the generated CSS (`@braird/tokens/css`). Native consumers vendor t
 generated `BrairdTokens.kt` / `BrairdTokens.swift` from a pinned tag. `braird-android`
 wiring is **SUR-763**; `braird-ios` when its UI starts.
 
-## Dark mode + stat font — provisional
+## Dark mode + stat font
 
-`tokens/dark/color.json` and `--font-stat` currently hold **placeholder** values so the
-machinery builds end-to-end. The real values come from the `braird/Braird Screens.html`
-Claude Design import (`/design-login`, run interactively) — a data-only follow-up. See
-`CHANGELOG.md`.
+`tokens/dark/color.json` is the **"Braird at night"** theme imported from the Claude Design
+project (`braird/screens/app.css`) — deep-forest ground, warm paper-white ink, greens +
+idea-inks lifted for the dark ground. Accent / custom / idea-inks are mode-varying (the
+design lifts them), so they live in `tokens/light` + `tokens/dark`; scope + status colours
+are mode-invariant (`tokens/brand`, not yet dark-tuned). `--font-stat` is Lora 28/600/1, the
+design's stat treatment. See `CHANGELOG.md`.
 
 ## Editing
 

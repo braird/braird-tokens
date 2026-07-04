@@ -13,13 +13,18 @@ assert.match(css, /\[data-theme="dark"\]\s*\{/, 'CSS must emit a manual [data-th
 assert.match(css, /@media \(prefers-color-scheme: dark\)/, 'CSS must emit a system prefers-color-scheme block');
 assert.match(css, /:root:not\(\[data-theme="light"\]\)/, 'system dark must yield to an explicit light override');
 
-// --- CSS: the new stat-box font token exists cross-platform ---
-assert.match(css, /--font-stat:/, 'CSS must expose --font-stat');
+// --- CSS: the stat-box font token (Braird Screens: Lora) exists cross-platform ---
+assert.match(css, /--font-stat: 'Lora'/, 'CSS --font-stat must be the Lora display serif (Braird Screens)');
 assert.ok(kt.includes('fontStat') && swift.includes('fontStat'), 'stat font must reach Compose + Swift');
+assert.match(css, /--text-stat-weight: 600;/, 'stat weight must be 600 (Braird Screens .stat .v)');
 
-// --- CSS: a known token round-trips light + provisional dark ---
+// --- CSS: a known token round-trips light + real Braird-at-night dark ---
 assert.match(css, /:root[\s\S]*--color-bg-primary: #EFEEE7;/, 'light --color-bg-primary must be #EFEEE7');
-assert.match(css, /\[data-theme="dark"\][\s\S]*--color-bg-primary: #15281C;/, 'dark --color-bg-primary must be #15281C');
+assert.match(css, /\[data-theme="dark"\][\s\S]*--color-bg-primary: #0C1A14;/, 'dark --color-bg-primary must be #0C1A14 (Braird at night)');
+
+// --- CSS: accent is lifted for dark (mode-varying, not invariant) ---
+assert.match(css, /:root[\s\S]*--color-accent: #2F9E63;/, 'light accent must be #2F9E63');
+assert.match(css, /\[data-theme="dark"\][\s\S]*--color-accent: #4FB87A;/, 'dark accent must lift to #4FB87A');
 
 // --- front-door font contract (SUR-508) preserved ---
 assert.match(css, /--font-front-door: 'Sometype Mono'/, '--font-front-door (Sometype Mono) must be preserved');
@@ -30,7 +35,7 @@ const darkVars = [...darkBlock.matchAll(/--([a-z0-9-]+):/g)].map((m) => m[1]).so
 const rootBlock = css.match(/:root\s*\{([\s\S]*?)\}/)[1];
 const rootVars = new Set([...rootBlock.matchAll(/--([a-z0-9-]+):/g)].map((m) => m[1]));
 for (const v of darkVars) assert.ok(rootVars.has(v), `dark var --${v} has no light counterpart in :root`);
-assert.ok(darkVars.length >= 11, `expected >=11 mode-varying vars, got ${darkVars.length}`);
+assert.ok(darkVars.length >= 26, `expected >=26 mode-varying vars (surfaces+text+border+accent+custom+inks), got ${darkVars.length}`);
 
 // --- native: both theme objects emitted, accent colour encoded ---
 assert.match(kt, /object ColorLight[\s\S]*object ColorDark/, 'Compose must emit ColorLight + ColorDark');

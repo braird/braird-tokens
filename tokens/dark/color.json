@@ -1,22 +1,39 @@
 {
   "dark": {
-    "$description": "⚠ PROVISIONAL dark theme (SUR-642). These are placeholder values so the dark-mode MACHINERY builds and can be reviewed end-to-end — they are NOT the final design. The real dark palette comes from the `braird/Braird Screens.html` Claude Design import (Deliverable 2), which needs an interactive /design-login. Seeds are the known Braird dark ground from surfc stripeTransition.js (SUR-419: #15281C ground, #F0ECE8 text, #B5ADA6 muted). Replace every value at import; keys mirror light/color.json exactly.",
+    "$description": "\"Braird at night\" dark theme — values read from the Braird Screens design (braird/screens/app.css [data-theme=\"dark\"], imported via the Claude Design project). Same hues lifted for a deep-forest ground: forest ground (not black), warm paper-white ink, leaf-green as the on-dark accent, clay kept to the 'your ideas' role, idea-inks brightened to read on the dark cloud. Keys mirror light/color.json.",
     "color": {
       "bg": {
-        "primary":   { "$value": "{primitive.ink.forest-deep}", "$type": "color", "$description": "PROVISIONAL" },
-        "input":     { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
-        "card":      { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
-        "subtle":    { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
-        "overlay":   { "$value": "rgba(5, 10, 6, 0.55)",        "$type": "color", "$description": "PROVISIONAL" },
-        "marketing": { "$value": "{primitive.ink.forest-deep}", "$type": "color", "$description": "PROVISIONAL" }
+        "primary":   { "$value": "#0C1A14",              "$type": "color", "$description": "--paper — deep forest ground" },
+        "input":     { "$value": "#102019",              "$type": "color", "$description": "dark .field background" },
+        "card":      { "$value": "#15291F",              "$type": "color", "$description": "--card" },
+        "subtle":    { "$value": "rgba(241, 245, 235, 0.10)", "$type": "color", "$description": "inactive chips / soft surfaces on dark" },
+        "overlay":   { "$value": "rgba(8, 14, 10, 0.62)", "$type": "color", "$description": "viewfinder/modal scrim on dark" },
+        "marketing": { "$value": "#0C1A14",              "$type": "color" }
       },
       "text": {
-        "primary":   { "$value": "{primitive.paper.warm}",       "$type": "color", "$description": "PROVISIONAL" },
-        "secondary": { "$value": "{primitive.paper.warm-muted}", "$type": "color", "$description": "PROVISIONAL" },
-        "muted":     { "$value": "{primitive.paper.warm-muted}", "$type": "color", "$description": "PROVISIONAL" }
+        "primary":   { "$value": "#F1F5EB", "$type": "color", "$description": "--ink — warm paper-white" },
+        "secondary": { "$value": "#B7C3B4", "$type": "color", "$description": "--secondary" },
+        "muted":     { "$value": "#8B968C", "$type": "color", "$description": "--muted" }
       },
-      "border":        { "$value": "{primitive.ink.slate}",       "$type": "color", "$description": "PROVISIONAL" },
-      "border-strong": { "$value": "{primitive.paper.warm-muted}","$type": "color", "$description": "PROVISIONAL" }
+      "border":        { "$value": "rgba(241, 245, 235, 0.12)", "$type": "color", "$description": "--hair" },
+      "border-strong": { "$value": "rgba(241, 245, 235, 0.22)", "$type": "color", "$description": "--hair-strong" },
+      "accent":       { "$value": "#4FB87A", "$type": "color", "$description": "--shoot lifted — on-dark accent" },
+      "accent-light": { "$value": "rgba(111, 192, 137, 0.15)", "$type": "color", "$description": "--sage on dark" },
+      "accent-dark":  { "$value": "#8AD69E", "$type": "color", "$description": "on-dark accent hover" },
+      "accent-text":  { "$value": "#92D6A6", "$type": "color", "$description": "--text-green lifted for type on dark" },
+      "custom":      { "$value": "#D2764A", "$type": "color", "$description": "clay lifted" },
+      "custom-text": { "$value": "#E6A77F", "$type": "color" },
+      "custom-bg":   { "$value": "rgba(210, 118, 74, 0.17)", "$type": "color" }
+    },
+    "ink": {
+      "mind":                 { "$value": "#6BA8D9", "$type": "color" },
+      "self":                 { "$value": "#AE9CD6", "$type": "color" },
+      "knowledge-systems":    { "$value": "#CDBB60", "$type": "color" },
+      "action-work":          { "$value": "#6FC089", "$type": "color" },
+      "power-society":        { "$value": "#E47C70", "$type": "color" },
+      "relationships-ethics": { "$value": "#B295D4", "$type": "color", "$description": "derived lift — the 6-branch design screen omits this branch" },
+      "time-change":          { "$value": "#84ACBC", "$type": "color" },
+      "world-meaning":        { "$value": "#CBA07D", "$type": "color", "$description": "derived lift — the 6-branch design screen omits this branch" }
     }
   }
 }

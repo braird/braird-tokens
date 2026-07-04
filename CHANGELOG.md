@@ -23,21 +23,26 @@ entry under `[Unreleased]` (CI-enforced, dependabot-exempt).
     stay in the CSS emitter (`platforms/css/web-only.css`), not the neutral source.
   - **Drift check** (`.github/workflows/drift.yml`): CI regenerates and fails if `build/`
     diverges from `tokens/**`. Changelog gate cloned from braird-core.
-- **Dark mode — system + manual (SUR-642).** The CSS emit ships `:root` (light),
-  `[data-theme="dark"]` (manual override, always wins), and a
+- **Dark mode — "Braird at night", system + manual (SUR-642).** The CSS emit ships `:root`
+  (light), `[data-theme="dark"]` (manual override, always wins), and a
   `@media (prefers-color-scheme: dark)` block that yields to an explicit `data-theme="light"`.
-  Compose/Swift emit parallel `ColorLight` / `ColorDark` objects for the theme layer.
-- **`--font-stat` — dedicated stat-box number face (SUR-642),** emitted to CSS + Compose +
-  Swift so the stat typography is one cross-platform token instead of a `styles.css` one-off.
+  Compose/Swift emit parallel `ColorLight` / `ColorDark` objects. **Values are the real
+  Braird Screens dark theme** (imported from the Claude Design project,
+  `braird/screens/app.css`): deep-forest ground `#0C1A14`, warm paper-white ink `#F1F5EB`,
+  greens + idea-inks **lifted** for the dark ground (accent `#2F9E63`→`#4FB87A`). Because the
+  design lifts accent / custom / idea-inks, those moved out of the mode-invariant `brand/`
+  layer into `tokens/light` + `tokens/dark`. (Two idea-inks the 6-branch design screen omits —
+  `relationships-ethics`, `world-meaning` — carry a derived lift, flagged in `tokens/dark/color.json`.)
+- **`--font-stat` — dedicated stat-box face (SUR-642).** Set to the Braird Screens stat
+  treatment: **Lora** (display serif), 28px / weight 600 / line-height 1 — not the base
+  `.stat-value` EB Garamond. Emitted to CSS + Compose + Swift so stat typography is one
+  cross-platform token instead of a `styles.css` one-off.
 
-### Provisional / follow-ups (need the interactive Claude Design import — `/design-login`)
+### Follow-ups
 
-- ⚠ **`tokens/dark/color.json` values are PROVISIONAL placeholders** seeded from the known
-  Braird dark ground (surfc `stripeTransition.js`, SUR-419). They exist so the dark-mode
-  machinery builds and reviews end-to-end; the **real** dark palette + the **final**
-  `--font-stat` / `--text-stat-*` values come from the `braird/Braird Screens.html` Claude
-  Design import (SUR-642 Deliverable 2) and are a data-only follow-up.
 - `DESIGN.md` was copied in from `surfc/src/design/DESIGN.md`; a platform-neutral edit pass
   and the surfc-side removal (leaving a pointer) land with the web repoint (Deliverable 3).
+- Scope + semantic-status colours are not yet dark-tuned (the design screen doesn't lift
+  them); revisit if a later design pass does.
 - Consumer repoint (`surfc`, `surfc-web` pinned by tag+SHA; hand-copied mirror deleted) is
   the Deliverable 3 follow-up, tracked to land in web lockstep.

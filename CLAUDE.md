@@ -32,9 +32,10 @@ generate (compiling the emitted Swift needs macOS, but that is the consumer's co
 ## Layout
 
 - `tokens/primitive/` — raw brand hues, **reference-only** (not emitted).
-- `tokens/light/`, `tokens/dark/` — mode-varying surfaces/text/border (semantic → primitive
-  refs). `dark/` is **PROVISIONAL** pending the Braird Screens.html import (SUR-642 D2).
-- `tokens/brand/` — mode-invariant brand colour (accent, semantic status, scope, idea inks).
+- `tokens/light/`, `tokens/dark/` — mode-varying colour: surfaces/text/border **plus**
+  accent/custom/idea-inks (the Braird Screens design lifts these for dark). `dark/` is the
+  real "Braird at night" theme imported from the Claude Design project.
+- `tokens/brand/` — mode-invariant colour only (semantic status + scope; not dark-tuned).
 - `tokens/type/`, `space.json`, `radius.json`, `shadow.json` — mode-less scale + geometry.
 - `platforms/css/web-only.css` — safe-area/z-index/breakpoints/transitions/nav: CSS-emitter
   layer, deliberately NOT in the neutral source (native has its own equivalents).

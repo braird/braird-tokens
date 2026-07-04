@@ -8,15 +8,8 @@ import androidx.compose.ui.unit.sp
 /** Braird design tokens. BrairdTheme (SUR-763) selects Light/Dark by the system/override. */
 object BrairdTokens {
   object ColorLight {
-    val colorAccent = Color(0xFF2F9E63)
-    val colorAccentLight = Color(0xFFDEEEDD)
-    val colorAccentDark = Color(0xFF154029)
-    val colorAccentText = Color(0xFF1E6B40)
     val colorDestructive = Color(0xFFB23B2E)
     val colorDestructiveBg = Color(0xFFF4E6E3)
-    val colorCustom = Color(0xFFB0552F)
-    val colorCustomText = Color(0xFF8C4321)
-    val colorCustomBg = Color(0xFFF1E6DC)
     val colorWarning = Color(0xFF8A6A1F)
     val colorWarningBg = Color(0xFFF3EAD5)
     val colorWarningText = Color(0xFF6E5316)
@@ -29,14 +22,6 @@ object BrairdTokens {
     val colorCollection = Color(0xFF2B5B8A)
     val colorCollectionText = Color(0xFF1F4670)
     val colorCollectionBg = Color(0xFFE5ECF4)
-    val inkMind = Color(0xFF2B5B8A)
-    val inkSelf = Color(0xFF5A4A7A)
-    val inkKnowledgeSystems = Color(0xFF6E6420)
-    val inkActionWork = Color(0xFF2F7D5C)
-    val inkPowerSociety = Color(0xFFA8392F)
-    val inkRelationshipsEthics = Color(0xFF6B3A7A)
-    val inkTimeChange = Color(0xFF3F6470)
-    val inkWorldMeaning = Color(0xFF7A4A2E)
     val colorBgPrimary = Color(0xFFEFEEE7)
     val colorBgInput = Color(0xFFF5F4ED)
     val colorBgCard = Color(0xFFFFFFFF)
@@ -48,18 +33,26 @@ object BrairdTokens {
     val colorTextMuted = Color(0xFF7B847A)
     val colorBorder = Color(0xFFDBDCD1)
     val colorBorderStrong = Color(0xFFB6BAAB)
-  }
-
-  object ColorDark {
     val colorAccent = Color(0xFF2F9E63)
     val colorAccentLight = Color(0xFFDEEEDD)
     val colorAccentDark = Color(0xFF154029)
     val colorAccentText = Color(0xFF1E6B40)
-    val colorDestructive = Color(0xFFB23B2E)
-    val colorDestructiveBg = Color(0xFFF4E6E3)
     val colorCustom = Color(0xFFB0552F)
     val colorCustomText = Color(0xFF8C4321)
     val colorCustomBg = Color(0xFFF1E6DC)
+    val inkMind = Color(0xFF2B5B8A)
+    val inkSelf = Color(0xFF5A4A7A)
+    val inkKnowledgeSystems = Color(0xFF6E6420)
+    val inkActionWork = Color(0xFF2F7D5C)
+    val inkPowerSociety = Color(0xFFA8392F)
+    val inkRelationshipsEthics = Color(0xFF6B3A7A)
+    val inkTimeChange = Color(0xFF3F6470)
+    val inkWorldMeaning = Color(0xFF7A4A2E)
+  }
+
+  object ColorDark {
+    val colorDestructive = Color(0xFFB23B2E)
+    val colorDestructiveBg = Color(0xFFF4E6E3)
     val colorWarning = Color(0xFF8A6A1F)
     val colorWarningBg = Color(0xFFF3EAD5)
     val colorWarningText = Color(0xFF6E5316)
@@ -72,25 +65,32 @@ object BrairdTokens {
     val colorCollection = Color(0xFF2B5B8A)
     val colorCollectionText = Color(0xFF1F4670)
     val colorCollectionBg = Color(0xFFE5ECF4)
-    val inkMind = Color(0xFF2B5B8A)
-    val inkSelf = Color(0xFF5A4A7A)
-    val inkKnowledgeSystems = Color(0xFF6E6420)
-    val inkActionWork = Color(0xFF2F7D5C)
-    val inkPowerSociety = Color(0xFFA8392F)
-    val inkRelationshipsEthics = Color(0xFF6B3A7A)
-    val inkTimeChange = Color(0xFF3F6470)
-    val inkWorldMeaning = Color(0xFF7A4A2E)
-    val colorBgPrimary = Color(0xFF15281C)
-    val colorBgInput = Color(0xFF1B241F)
-    val colorBgCard = Color(0xFF1B241F)
-    val colorBgSubtle = Color(0xFF1B241F)
-    val colorBgOverlay = Color(0x8C050A06)
-    val colorBgMarketing = Color(0xFF15281C)
-    val colorTextPrimary = Color(0xFFF0ECE8)
-    val colorTextSecondary = Color(0xFFB5ADA6)
-    val colorTextMuted = Color(0xFFB5ADA6)
-    val colorBorder = Color(0xFF586056)
-    val colorBorderStrong = Color(0xFFB5ADA6)
+    val colorBgPrimary = Color(0xFF0C1A14)
+    val colorBgInput = Color(0xFF102019)
+    val colorBgCard = Color(0xFF15291F)
+    val colorBgSubtle = Color(0x1AF1F5EB)
+    val colorBgOverlay = Color(0x9E080E0A)
+    val colorBgMarketing = Color(0xFF0C1A14)
+    val colorTextPrimary = Color(0xFFF1F5EB)
+    val colorTextSecondary = Color(0xFFB7C3B4)
+    val colorTextMuted = Color(0xFF8B968C)
+    val colorBorder = Color(0x1FF1F5EB)
+    val colorBorderStrong = Color(0x38F1F5EB)
+    val colorAccent = Color(0xFF4FB87A)
+    val colorAccentLight = Color(0x266FC089)
+    val colorAccentDark = Color(0xFF8AD69E)
+    val colorAccentText = Color(0xFF92D6A6)
+    val colorCustom = Color(0xFFD2764A)
+    val colorCustomText = Color(0xFFE6A77F)
+    val colorCustomBg = Color(0x2BD2764A)
+    val inkMind = Color(0xFF6BA8D9)
+    val inkSelf = Color(0xFFAE9CD6)
+    val inkKnowledgeSystems = Color(0xFFCDBB60)
+    val inkActionWork = Color(0xFF6FC089)
+    val inkPowerSociety = Color(0xFFE47C70)
+    val inkRelationshipsEthics = Color(0xFFB295D4)
+    val inkTimeChange = Color(0xFF84ACBC)
+    val inkWorldMeaning = Color(0xFFCBA07D)
   }
 
   object Space {
@@ -136,8 +136,8 @@ object BrairdTokens {
     const val textLabelHeight = 1.4f
     const val textLabelWeight = 500
     val textStatSize = 28.sp
-    const val textStatHeight = 1.1f
-    const val textStatWeight = 700
+    const val textStatHeight = 1f
+    const val textStatWeight = 600
   }
 
   object Font {
@@ -145,6 +145,6 @@ object BrairdTokens {
     const val fontSerif = "'EB Garamond', Georgia, 'Times New Roman', serif"
     const val fontDisplay = "'Lora', Georgia, serif"
     const val fontFrontDoor = "'Sometype Mono', ui-monospace, SFMono-Regular, monospace"
-    const val fontStat = "'EB Garamond', Georgia, 'Times New Roman', serif"
+    const val fontStat = "'Lora', Georgia, serif"
   }
 }

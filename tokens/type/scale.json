@@ -7,6 +7,6 @@
     "body":     { "size": { "$value": "14px", "$type": "dimension" }, "height": { "$value": "1.6", "$type": "number" }, "weight": { "$value": "400", "$type": "fontWeight" } },
     "caption":  { "size": { "$value": "12px", "$type": "dimension" }, "height": { "$value": "1.5", "$type": "number" }, "weight": { "$value": "400", "$type": "fontWeight" } },
     "label":    { "size": { "$value": "11px", "$type": "dimension" }, "height": { "$value": "1.4", "$type": "number" }, "weight": { "$value": "500", "$type": "fontWeight" } },
-    "stat":     { "size": { "$value": "28px", "$type": "dimension", "$description": "⚠ PROVISIONAL — from Braird Screens.html import" }, "height": { "$value": "1.1", "$type": "number" }, "weight": { "$value": "700", "$type": "fontWeight" } }
+    "stat":     { "size": { "$value": "28px", "$type": "dimension" }, "height": { "$value": "1", "$type": "number" }, "weight": { "$value": "600", "$type": "fontWeight", "$description": "Braird Screens .stat .v — Lora 28px / 600 / line-height 1" } }
   }
 }
