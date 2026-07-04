@@ -1,6 +1,6 @@
 {
   "name": "@braird/tokens",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "description": "Braird design tokens — one platform-neutral source (DTCG/JSON), generated into CSS custom properties, a Compose Kotlin object, and Swift constants. Consumed by surfc, surfc-web, braird-android, and braird-ios.",
   "type": "module",
   "license": "UNLICENSED",

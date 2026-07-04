@@ -14,8 +14,11 @@ reimplements them against these tokens).
 
 The token *values* were lifted from `surfc/src/design/tokens.css` (SUR-679 Braird ·
 Resurface palette) with **names unchanged**, so aliased surfc components recolour with no
-edits. `--font-front-door` (Sometype Mono, SUR-508) is a cross-repo contract — keep it in
-lockstep across every emit.
+edits. **Type is the Braird two-face system (v0.2.0):** `--font-base` = Hanken Grotesk (all
+UI/body), everything serif (`--font-serif` / `--font-display` / `--font-stat` /
+`--font-front-door`) = Lora. The Sometype Mono front-door face (SUR-508) is retired — the
+`--font-front-door` token stays (now Lora) for consumer compatibility. Font *intent* only
+lives here; consumers bundle the Hanken Grotesk + Lora binaries.
 
 ## Commands
 

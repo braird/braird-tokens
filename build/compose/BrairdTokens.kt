@@ -141,10 +141,10 @@ object BrairdTokens {
   }
 
   object Font {
-    const val fontBase = "'IBM Plex Sans', system-ui, -apple-system, sans-serif"
-    const val fontSerif = "'EB Garamond', Georgia, 'Times New Roman', serif"
+    const val fontBase = "'Hanken Grotesk', system-ui, -apple-system, sans-serif"
+    const val fontSerif = "'Lora', Georgia, serif"
     const val fontDisplay = "'Lora', Georgia, serif"
-    const val fontFrontDoor = "'Sometype Mono', ui-monospace, SFMono-Regular, monospace"
+    const val fontFrontDoor = "'Lora', Georgia, serif"
     const val fontStat = "'Lora', Georgia, serif"
   }
 }

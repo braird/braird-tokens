@@ -26,8 +26,14 @@ assert.match(css, /\[data-theme="dark"\][\s\S]*--color-bg-primary: #0C1A14;/, 'd
 assert.match(css, /:root[\s\S]*--color-accent: #2F9E63;/, 'light accent must be #2F9E63');
 assert.match(css, /\[data-theme="dark"\][\s\S]*--color-accent: #4FB87A;/, 'dark accent must lift to #4FB87A');
 
-// --- front-door font contract (SUR-508) preserved ---
-assert.match(css, /--font-front-door: 'Sometype Mono'/, '--font-front-door (Sometype Mono) must be preserved');
+// --- two-face Braird font system (v0.2.0): Hanken Grotesk UI + Lora serif ---
+assert.match(css, /--font-base: 'Hanken Grotesk'/, 'UI face must be Hanken Grotesk');
+assert.match(css, /--font-serif: 'Lora'/, 'reading serif must be Lora');
+assert.match(css, /--font-front-door: 'Lora'/, 'front-door consolidated to Lora (Sometype Mono retired, SUR-508)');
+{
+  const faces = new Set([...css.matchAll(/--font-[a-z-]+: (?:'([^']+)')/g)].map((m) => m[1]));
+  assert.ok(faces.size === 2 && faces.has('Hanken Grotesk') && faces.has('Lora'), `expected exactly the 2 Braird faces, got ${[...faces].join(', ')}`);
+}
 
 // --- light/dark key parity: every mode-varying var in :root has a dark counterpart ---
 const darkBlock = css.match(/\[data-theme="dark"\]\s*\{([\s\S]*?)\}/)[1];
