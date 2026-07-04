@@ -1,0 +1,22 @@
+{
+  "light": {
+    "$description": "Light theme — the mode-varying surfaces, text, and border. Emitted to :root. Names match surfc/src/design/tokens.css exactly (SUR-679) so aliased components recolour unchanged.",
+    "color": {
+      "bg": {
+        "primary":   { "$value": "{primitive.paper.cool}",  "$type": "color" },
+        "input":     { "$value": "{primitive.paper.input}", "$type": "color" },
+        "card":      { "$value": "{primitive.paper.card}",  "$type": "color" },
+        "subtle":    { "$value": "{primitive.paper.subtle}","$type": "color" },
+        "overlay":   { "$value": "rgba(21, 27, 21, 0.40)",  "$type": "color", "$description": "lightbox/modal scrim" },
+        "marketing": { "$value": "{primitive.paper.cool}",  "$type": "color" }
+      },
+      "text": {
+        "primary":   { "$value": "{primitive.ink.forest}", "$type": "color" },
+        "secondary": { "$value": "{primitive.ink.slate}",  "$type": "color" },
+        "muted":     { "$value": "{primitive.ink.mist}",   "$type": "color" }
+      },
+      "border":        { "$value": "{primitive.line.hair}",   "$type": "color" },
+      "border-strong": { "$value": "{primitive.line.strong}", "$type": "color" }
+    }
+  }
+}

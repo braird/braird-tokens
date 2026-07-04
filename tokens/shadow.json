@@ -1,0 +1,10 @@
+{
+  "shadow": {
+    "$description": "Forest-tinted shadows. Kept as raw CSS shadow strings ($type: shadow) — mode-invariant for now. Native (Compose elevation / SwiftUI shadow) reinterprets these; the CSS emit passes them through verbatim. Names match surfc/src/design/tokens.css.",
+    "card":        { "$value": "0 2px 8px rgba(21, 64, 41, 0.07)", "$type": "shadow" },
+    "modal":       { "$value": "0 8px 32px rgba(21, 64, 41, 0.12)", "$type": "shadow" },
+    "focus":       { "$value": "0 0 0 3px rgba(47, 158, 99, 0.18)", "$type": "shadow", "$description": "green focus ring" },
+    "chip-active": { "$value": "0 0 0 3px rgba(47, 158, 99, 0.22)", "$type": "shadow", "$description": "selected chip halo" },
+    "book":        { "$value": "inset 2px 0 2px -1px rgba(20, 24, 21, 0.28), 0 1px 3px rgba(21, 64, 41, 0.18)", "$type": "shadow" }
+  }
+}

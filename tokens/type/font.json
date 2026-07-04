@@ -1,0 +1,10 @@
+{
+  "font": {
+    "$description": "Font-family + stat-face INTENT only — the neutral source carries the family stack; each consumer bundles its own binaries (woff2 in the web repos, ttf/otf in native). --font-front-door (Sometype Mono, SUR-508) must stay in lockstep across every emit.",
+    "base":       { "$value": "'IBM Plex Sans', system-ui, -apple-system, sans-serif", "$type": "fontFamily", "$description": "app interior UI + body" },
+    "serif":      { "$value": "'EB Garamond', Georgia, 'Times New Roman', serif",       "$type": "fontFamily", "$description": "reading content — quotes, note body" },
+    "display":    { "$value": "'Lora', Georgia, serif",                                  "$type": "fontFamily", "$description": "screen titles (editorial)" },
+    "front-door": { "$value": "'Sometype Mono', ui-monospace, SFMono-Regular, monospace","$type": "fontFamily", "$description": "front-door surfaces only (landing/auth/waitlist) — SUR-508" },
+    "stat":       { "$value": "'EB Garamond', Georgia, 'Times New Roman', serif",        "$type": "fontFamily", "$description": "⚠ PROVISIONAL — stat-box number face. Current value = the existing .stat-value serif. The Braird Screens.html import (Deliverable 2) sets the final value; the token exists now so surfc can reference var(--font-stat) without re-plumbing." }
+  }
+}

@@ -1,0 +1,43 @@
+/* ============================================================
+   Web-only tokens — CSS-emitter layer, NOT the neutral source.
+   ------------------------------------------------------------
+   Per SUR-642: env() safe-area, the z-index scale, breakpoints,
+   transition timings, and nav-layout widths are web platform
+   concerns. Native has its own equivalents (window insets,
+   Compose/SwiftUI layering, adaptive layout, animation specs),
+   so these deliberately do NOT go through the shared DTCG source.
+   scripts/build.mjs concatenates this verbatim onto the emitted
+   :root block so consumers still import a single tokens.css.
+   ============================================================ */
+:root {
+  /* Header + safe areas */
+  --header-height: 60px;
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-top: var(--safe-area-top);
+  --safe-bottom: max(34px, var(--safe-area-bottom));
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* Navigation layout */
+  --nav-bar-height: 64px;
+  --nav-rail-width: 68px;
+  --nav-drawer-width: 220px;
+  --nav-right-panel: 260px;
+
+  /* Z-index scale */
+  --z-base: 0;
+  --z-card: 10;
+  --z-nav: 100;
+  --z-fab: 200;
+  --z-modal: 300;
+  --z-lightbox: 400;
+
+  /* Breakpoints (reference only — CSS can't use vars in media queries;
+     use the raw px in @media). Kept for parity with the old tokens.css. */
+  --bp-tablet: 768px;
+  --bp-desktop: 1200px;
+}

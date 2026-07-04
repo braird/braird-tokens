@@ -1,0 +1,22 @@
+{
+  "dark": {
+    "$description": "⚠ PROVISIONAL dark theme (SUR-642). These are placeholder values so the dark-mode MACHINERY builds and can be reviewed end-to-end — they are NOT the final design. The real dark palette comes from the `braird/Braird Screens.html` Claude Design import (Deliverable 2), which needs an interactive /design-login. Seeds are the known Braird dark ground from surfc stripeTransition.js (SUR-419: #15281C ground, #F0ECE8 text, #B5ADA6 muted). Replace every value at import; keys mirror light/color.json exactly.",
+    "color": {
+      "bg": {
+        "primary":   { "$value": "{primitive.ink.forest-deep}", "$type": "color", "$description": "PROVISIONAL" },
+        "input":     { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
+        "card":      { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
+        "subtle":    { "$value": "{primitive.ink.forest}",      "$type": "color", "$description": "PROVISIONAL" },
+        "overlay":   { "$value": "rgba(5, 10, 6, 0.55)",        "$type": "color", "$description": "PROVISIONAL" },
+        "marketing": { "$value": "{primitive.ink.forest-deep}", "$type": "color", "$description": "PROVISIONAL" }
+      },
+      "text": {
+        "primary":   { "$value": "{primitive.paper.warm}",       "$type": "color", "$description": "PROVISIONAL" },
+        "secondary": { "$value": "{primitive.paper.warm-muted}", "$type": "color", "$description": "PROVISIONAL" },
+        "muted":     { "$value": "{primitive.paper.warm-muted}", "$type": "color", "$description": "PROVISIONAL" }
+      },
+      "border":        { "$value": "{primitive.ink.slate}",       "$type": "color", "$description": "PROVISIONAL" },
+      "border-strong": { "$value": "{primitive.paper.warm-muted}","$type": "color", "$description": "PROVISIONAL" }
+    }
+  }
+}

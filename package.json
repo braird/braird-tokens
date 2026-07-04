@@ -1,0 +1,29 @@
+{
+  "name": "@braird/tokens",
+  "version": "0.0.0",
+  "description": "Braird design tokens — one platform-neutral source (DTCG/JSON), generated into CSS custom properties, a Compose Kotlin object, and Swift constants. Consumed by surfc, surfc-web, braird-android, and braird-ios.",
+  "type": "module",
+  "license": "UNLICENSED",
+  "private": true,
+  "files": [
+    "build/",
+    "tokens/",
+    "DESIGN.md"
+  ],
+  "exports": {
+    "./css": "./build/css/tokens.css",
+    "./compose": "./build/compose/BrairdTokens.kt",
+    "./swift": "./build/swift/BrairdTokens.swift"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs && node scripts/selfcheck.mjs",
+    "drift": "node scripts/build.mjs && git diff --exit-code build/"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.3"
+  }
+}
