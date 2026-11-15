@@ -33,7 +33,7 @@ Each consumer pins this repo as an npm git dependency — the SHA recorded in
 `package-lock.json` **is** the checksum pin:
 
 ```jsonc
-// surfc / surfc-web package.json
+// a web consumer's package.json
 "@braird/tokens": "github:pentoaswordfight/braird-tokens#<tag>"
 ```
 
@@ -54,4 +54,4 @@ design's stat treatment. See `CHANGELOG.md`.
 
 Edit `tokens/**`, run `npm run check`, commit the regenerated `build/`. Never hand-edit
 `build/` — the drift CI regenerates and fails on any divergence. `DESIGN.md` is the shared,
-platform-neutral design-intent doc (relocated from `surfc`).
+platform-neutral design-intent doc (relocated from the PWA repo).

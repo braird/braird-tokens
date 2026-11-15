@@ -8,6 +8,8 @@ entry under `[Unreleased]` (CI-enforced, dependabot-exempt).
 
 ### Changed
 
+- **README: no old product name.** The consumer example and the `DESIGN.md` note name no repo
+  by its old name. Docs only; no token change.
 - **Canonicalise on the Braird two-face type system (SUR-642).** The brand is now exactly
   **Hanken Grotesk** (all UI/body) + **Lora** (all serif/editorial), matching the Braird app
   design (`braird/screens/app.css`). Token changes: `--font-base` `IBM Plex Sans → Hanken
